@@ -1,0 +1,18 @@
+{
+  "name": "tock-js-example",
+  "version": "0.0.1",
+  "description": "Example Bot using Tock",
+  "main": "src/index.ts",
+  "author": "François Nguyen <https://github.com/phurytw>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.7.4",
+    "tock-js": "file:../tock-js",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "@types/unsplash-js": "^5.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "unsplash-js": "^5.0.0"
+  }
+}
