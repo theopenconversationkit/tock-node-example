@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bot</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/tock-react-kit@latest/build/tock-react-kit.umd.js"
+    ></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chat"></div>
+    <script>
+      TockReact.renderChat(
+        document.getElementById('chat'),
+        'https://demo-bot.tock.ai/io/phurytw/',
+        {
+          fontFamily: 'Lato, Arial, Helvetica, sans-serif',
+          fontSize: '16px',
+          botColor: '#C08497',
+          cardColor: '#F7AF9D',
+          borderRadius: '1em',
+          styles: {
+            chat: `background-image: radial-gradient(circle 79vh at bottom center, #F3EEC3, #F7E3AF);`,
+            quickReply: `background: #F46197; color: #B0D0D3; border-color: #B0D0D3;`,
+            card: `& button { background: #F46197; color: #B0D0D3; border-color: #B0D0D3; }`,
+          },
+        }
+      );
+    </script>
+  </body>
+</html>
