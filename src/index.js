@@ -8,7 +8,7 @@ const unsplash = new Unsplash({
   secret: '<UNSPLASH_SECRET>',
 });
 
-const bot = new Bot('<API_KEY>', '<TOCK_SERVER_URL>');
+const bot = new Bot('<API_KEY>', 'demo-bot.tock.ai');
 
 const itemHandler = ({ send, userData }) => {
   if (Array.isArray(userData.wishlist) && userData.wishlist.length > 0) {
