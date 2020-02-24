@@ -1,7 +1,7 @@
 # tock-node-example
 
 Chatbot sample using [Tock](https://doc.tock.ai/) and stories written 
-in Typescript running on Nodejs (`tock-node`).
+in Javascript running on Nodejs (`tock-node`).
 
 ## Bot setup
 
@@ -20,6 +20,8 @@ const bot = new Bot('<YOUR_API_KEY_HERE>', 'demo-bot.tock.ai');
 ```
 
 Don't prefix the host with `http://` or `https://`. Don't suffix it with a relative path or the Web connector path.
+
+## Run
 
 - Run the `tock-node-example` from root folder:
 
