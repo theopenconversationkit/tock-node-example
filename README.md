@@ -1,38 +1,48 @@
 # tock-node-example
 
 Chatbot sample using [Tock](https://doc.tock.ai/) and stories written 
-in Javascript running on Nodejs (`tock-node`).
+in Javascript running on Nodejs (see [`tock-node`](https://github.com/theopenconversationkit/tock-node)).
 
 ## Bot setup
 
 - Create a _bot application_ on a Tock platform (_Bot API_ mode), 
 such as the [Tock demo](https://demo.tock.ai/) public instance.
 
-- Configure a _Web connector_ and copy the API key.
+- Add a _Web connector_ to the bot and copy the API key.
 
-## Tock-Node setup
+## Node setup
 
-- In `index.j (L11)` place your API key and the Tock platform hostname 
-(`demo-bot.tock.ai` for the demo, `localhost` for local platform, etc.).
+- In `index.js (L11)` replace the API key.
 
+- If necessary, declare the Tock platform host, port and WebSocket protocol to use.
+Default values are `demo-bot.tock.ai` (the public demo), `443` and `wss` (secured port/protocol).
+
+Tock demo example:
 ```
-const bot = new Bot('<YOUR_API_KEY_HERE>', 'demo-bot.tock.ai');
+const bot = new Bot('<YOUR_API_KEY_HERE>');
 ```
 
-Don't prefix the host with `http://` or `https://`. Don't suffix it with a relative path or the Web connector path.
+Local instance example:
+```
+const bot = new Bot('<YOUR_API_KEY_HERE>', 'localhost', '8080', 'ws');
+```
+
+NOTE: Don't prefix the host with `http://` or `https://`. Don't suffix it with a relative path or the Web connector path.
 
 ## Run
 
-- Run the `tock-node-example` from root folder:
+- Run `tock-node-example` from root folder:
 
+Using YARN:
 ```
 yarn install
 yarn start
+```
 
-or
-
+NPM alternative:
+```
 npm install
 npm start
 ```
 
-- When `Connection established`, Tock Node stories are ready to test.
+- When `Connection established`, Tock Nodejs stories are ready to test.

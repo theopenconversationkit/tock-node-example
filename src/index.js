@@ -1,4 +1,4 @@
-const { WebBotInterface, Bot, imageCard, i18nText } = require('tock-node');
+const { Bot, imageCard, i18nText } = require('tock-node');
 const Unsplash = require('unsplash-js').default;
 const toJson = require('unsplash-js').toJson;
 require('isomorphic-fetch');
@@ -8,7 +8,11 @@ const unsplash = new Unsplash({
   secret: '<UNSPLASH_SECRET>',
 });
 
-const bot = new Bot('<API_KEY>', 'demo-bot.tock.ai');
+// Tock public demo example (host: demo-bot.tock.ai, port: 443, protocol: wss):
+const bot = new Bot('<TOCK_API_KEY>');
+
+// Tock local instance example:
+//const bot = new Bot('<TOCK_API_KEY>', 'localhost', 8080, 'ws');
 
 const itemHandler = ({ send, userData }) => {
   if (Array.isArray(userData.wishlist) && userData.wishlist.length > 0) {
@@ -22,8 +26,6 @@ const itemHandler = ({ send, userData }) => {
     );
   }
 };
-
-bot.addInterface(WebBotInterface());
 
 bot.addStory(
   'greetings',
