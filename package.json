@@ -2,6 +2,10 @@
   "name": "tock-js-example",
   "version": "0.0.1",
   "description": "Example Bot using Tock",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theopenconversationkit/tock-node-example.git"
+  },
   "main": "src/index.js",
   "author": "François Nguyen <https://github.com/phurytw>",
   "license": "MIT",
@@ -10,7 +14,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.7.4",
-    "tock-node": "^0.1.2",
+    "tock-node": "^20.3.0",
     "typescript": "^3.6.2"
   },
   "dependencies": {

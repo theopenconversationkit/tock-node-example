@@ -458,10 +458,10 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
-tock-node@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/tock-node/-/tock-node-0.1.2.tgz#a0f10415ad86e135f90c5e229067865e867610ec"
-  integrity sha512-fqhavpmzhTqExY0wQXTpB8d4vUfDQ2ZVBvV9pUclYJ55jfewfWwMfLSBjRJpcUFhJN5a1gH+coI2x6aH9hwTyw==
+tock-node@^20.3.0:
+  version "20.3.0"
+  resolved "https://registry.yarnpkg.com/tock-node/-/tock-node-20.3.0.tgz#dc2523a93efce16f18228e95d7c2bd450da9f7dd"
+  integrity sha512-4SmW20X0JCuk/yDMhzFTZ4vOB9tc7GqJw24iZP7gyWmKKvzHTcN8B0UdO0H+hOK2FG3rSM0qN0pea+SIbH4ypQ==
   dependencies:
     websocket "^1.0.29"
 
